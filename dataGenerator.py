@@ -68,34 +68,5 @@ def datagencheck(n):
     print(os.path.realpath('outputfile.json'))
     return os.path.realpath('outputfile.json')
 
-datagencheck(10)
-
-def flattenjson(data):
-    val = dict()
-    with open(datagencheck(10), "r") as f:
-        data = json.load(f)
-    for i in data.keys():
-        if isinstance(data[i], dict):
-            get = flattenjson(data[i])
-            for j in get.keys():
-                val[i + "." + j] = get[j]
-        else:
-            val[i] = data[i]
-    new = set(val.keys())
-    print(new)
-    return new
-
-
-
-
-
-
-def datafetcher(resource):
-    count = 0
-    api_request_url = "https://snapshot.cloud-elements.com/elements/api-v2/" + resource
-    r = requests.get(api_request_url, headers=headers)
-    #print(r.content)
-    json_string = json.loads(r.content)[0]
-    #print(json_string)
-    return(json_string)
+newoutputdata =datagencheck(10)
 
