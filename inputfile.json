@@ -1,0 +1,27 @@
+{
+  "line_items": [
+    {
+      "title": "<<name.title>>",
+      "price": "<<random.number>>",
+      "grams": "<<random.number>>",
+      "quantity": "<<random.number>>",
+      "requires_shipping": true,
+      "tax_lines": [
+        {
+          "price": "<<random.number>>",
+          "rate": "<<random.number>>",
+          "title": "<<name.title>>"
+        }
+      ]
+    }
+  ],
+  "transactions": [
+    {
+      "kind": "authorization",
+      "status": "success",
+      "amount": "<<random.number>>"
+    }
+  ],
+  "total_tax": "<<random.number>>",
+  "currency": "EUR"
+}
