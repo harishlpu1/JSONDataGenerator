@@ -8,9 +8,9 @@ import requests
 
 headers = {
     "accept": "application/json",
-    "Authorization": "User qa5xl+qHq7qObgRnrfXZoVccNYApz40TZwyKRFQ2GsM=, "
-                     "Organization 05026fa75745a465c1e066d4e7cd91e3, "
-                     "Element AKQF2fwr9Wrv0dtlDQZXmM2fJ3Cu9mADwtP9Kk+V55A="
+    "Authorization": "User , "
+                     "Organization , "
+                     "Element "
 }
 
 def newgen(data1):
